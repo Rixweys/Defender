@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\FireballShot.cs" />
     <Compile Include="Assets\Scripts\Gold.cs" />
     <Compile Include="Assets\Scripts\HealthHero.cs" />
+    <Compile Include="Assets\Scripts\HeraldOfDeath.cs" />
     <Compile Include="Assets\Scripts\Hero.cs" />
     <Compile Include="Assets\Scripts\Kills.cs" />
     <Compile Include="Assets\Scripts\OptionMenu.cs" />
@@ -90,11 +91,9 @@
     <Compile Include="Assets\Scripts\_Shop\Shop.cs" />
     <Compile Include="Assets\Scripts\_Shop\Stonks.cs" />
     <Compile Include="Assets\Scripts\_Shop\StonksButton.cs" />
-    <None Include="Assets\Bringer Of Death\License.txt" />
     <None Include="Assets\Enemy Galore 1 - Pixel Art\Read Me.txt" />
     <None Include="Assets\Fantasy Environment and Animated Characters (Pixel Art) [free add-on]\Readme.txt" />
     <None Include="Assets\Fantasy Environment and Animated Characters (Pixel Art) [free add-on]\Graphical\Characters\Characters Sizes to Slice.txt" />
-    <None Include="Assets\Bringer Of Death\Contact.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

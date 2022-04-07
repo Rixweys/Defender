@@ -7,20 +7,24 @@ public class Fireball : MonoBehaviour
     private float speed = 25f;
     [SerializeField]
     private float lifetime = 1.5f;
+
     void Start()
     {
         StartCoroutine(InsObj());
     }
+
     void Update()
     {
         transform.Translate(Vector2.up * speed * Time.deltaTime);
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.GetComponent<Slime>())
             Destroy(gameObject);
     }
-        IEnumerator InsObj()
+    
+    IEnumerator InsObj()
     {
         yield return new WaitForSeconds(lifetime);
         Destroy(gameObject);

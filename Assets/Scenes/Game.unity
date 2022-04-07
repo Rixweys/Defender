@@ -900,7 +900,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 337663221}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b3a6a5e0fcf0e9849b6d30d4dac196bc, type: 3}
   m_Name: 
@@ -1895,13 +1895,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1312271435120289224, guid: 4bf0bb83d0409a54093b3659b96be6db,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1312271435120289224, guid: 4bf0bb83d0409a54093b3659b96be6db,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -750047184722822154, guid: 1914d95466e3d4341a618c35a56d5f82,
+        type: 3}
     - target: {fileID: 6665638430077191109, guid: 4bf0bb83d0409a54093b3659b96be6db,
         type: 3}
       propertyPath: m_Name
       value: HeraldOfDeath
       objectReference: {fileID: 0}
+    - target: {fileID: 8357194988685590938, guid: 4bf0bb83d0409a54093b3659b96be6db,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6b59e4c9a15c1de4682fcb4fcc9e468f, type: 2}
     m_RemovedComponents:
-    - {fileID: 8357194988685590938, guid: 4bf0bb83d0409a54093b3659b96be6db, type: 3}
+    - {fileID: 6064191254356767808, guid: 4bf0bb83d0409a54093b3659b96be6db, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4bf0bb83d0409a54093b3659b96be6db, type: 3}
 --- !u!1 &767020431
 GameObject:
@@ -4122,6 +4138,25 @@ MonoBehaviour:
     type: 3}
   FireballShotPoint: {fileID: 1775434223}
   Firerate: 0.5
+--- !u!1 &1797849366 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6665638430077191109, guid: 4bf0bb83d0409a54093b3659b96be6db,
+    type: 3}
+  m_PrefabInstance: {fileID: 691177943}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1797849369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797849366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b723dbe394ed1a94eb4499a631ffe7a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: -3
 --- !u!1 &1804402831
 GameObject:
   m_ObjectHideFlags: 0
@@ -4817,6 +4852,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 2650662282355918815, guid: f4c9505086fed8a4d974d2769e442c6b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8314015455981724144, guid: f4c9505086fed8a4d974d2769e442c6b,
         type: 3}

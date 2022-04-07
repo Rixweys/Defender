@@ -12,6 +12,6 @@ public class Gold : MonoBehaviour
     }
     public static void GoldForKill() 
     {
-        gold += Random.Range(1, 5);
+        gold += Random.Range(1, 3);
     }
 }
