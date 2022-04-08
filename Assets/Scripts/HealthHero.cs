@@ -7,7 +7,7 @@ public class HealthHero : MonoBehaviour
 
     void Update()
     {
-        healthText.text = $"Health: {Wall.health}";
+        healthText.text = $"Health: {Wall.WallHealth}";
 
     }
 }

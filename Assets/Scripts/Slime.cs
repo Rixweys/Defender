@@ -64,10 +64,8 @@ public class Slime : MonoBehaviour
     {
         once--;
         anim.SetBool("State_idle", false);
-        speed = 1.5f;
         anim.SetInteger("State_get_damage", 1);
-        yield return new WaitForSeconds(0.1f);
-        speed = -3f;
+        yield return new WaitForSeconds(0.15f);
         anim.SetInteger("State_get_damage", 2);
         once++;
     }
@@ -79,6 +77,7 @@ public class Slime : MonoBehaviour
         anim.SetBool("State_hit", true);
         CheckOfHealth();
         yield return new WaitForSeconds(0.5f);
+        Wall.WallHealth -= 1;
         anim.SetBool("State_hit", false);
         CheckOfHealth();
         StartCoroutine(Hit());

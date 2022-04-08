@@ -27,7 +27,11 @@ public class HeraldOfDeath : MonoBehaviour
             CheckOfHealth();
             twice--;
         }
-        else if (collision.gameObject.GetComponent<Wall>())
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.GetComponent<Wall>())
         {
             speed = 0f;
             StartCoroutine(Idle());
@@ -65,10 +69,8 @@ public class HeraldOfDeath : MonoBehaviour
     {
         once--;
         anim.SetBool("State_idle", false);
-        speed = 1.5f;
         anim.SetInteger("State_get_damage", 1);
-        yield return new WaitForSeconds(0.1f);
-        speed = -3f;
+        yield return new WaitForSeconds(0.9f);
         anim.SetInteger("State_get_damage", 2);
         once++;
     }
@@ -79,7 +81,8 @@ public class HeraldOfDeath : MonoBehaviour
         yield return new WaitForSeconds(2f);
         anim.SetBool("State_hit", true);
         CheckOfHealth();
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.9f);
+        Wall.WallHealth -= 1;
         anim.SetBool("State_hit", false);
         CheckOfHealth();
         StartCoroutine(Hit());
@@ -94,7 +97,7 @@ public class HeraldOfDeath : MonoBehaviour
                 speed = 0;
                 GoldDrop();
                 StartCoroutine(Death());
-                Invoke("KillEnemy", 0.36f);
+                Invoke("KillEnemy", 0.9f);
             }
             else
                 StartCoroutine(GetDamage());

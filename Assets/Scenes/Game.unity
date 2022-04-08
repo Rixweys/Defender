@@ -1906,6 +1906,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -750047184722822154, guid: 1914d95466e3d4341a618c35a56d5f82,
         type: 3}
+    - target: {fileID: 4285451259269964070, guid: 4bf0bb83d0409a54093b3659b96be6db,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.39922133
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285451259269964070, guid: 4bf0bb83d0409a54093b3659b96be6db,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.41758248
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285451259269964070, guid: 4bf0bb83d0409a54093b3659b96be6db,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.6140852
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285451259269964070, guid: 4bf0bb83d0409a54093b3659b96be6db,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6665638430077191109, guid: 4bf0bb83d0409a54093b3659b96be6db,
         type: 3}
       propertyPath: m_Name
@@ -1915,7 +1935,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 6b59e4c9a15c1de4682fcb4fcc9e468f, type: 2}
+      objectReference: {fileID: 9100000, guid: ccee253ff083e9e45ac8d4d553de6318, type: 2}
     m_RemovedComponents:
     - {fileID: 6064191254356767808, guid: 4bf0bb83d0409a54093b3659b96be6db, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4bf0bb83d0409a54093b3659b96be6db, type: 3}
@@ -4157,6 +4177,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -3
+--- !u!70 &1797849373
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797849366}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 2.4511213, y: -1.278553}
+  m_Size: {x: 1.8287054, y: 3.476099}
+  m_Direction: 0
 --- !u!1 &1804402831
 GameObject:
   m_ObjectHideFlags: 0

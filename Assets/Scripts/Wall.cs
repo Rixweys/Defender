@@ -5,32 +5,29 @@ using UnityEngine.SceneManagement;
 public class Wall : MonoBehaviour
 {
     public static int maxHealth = 50;
-    public static int health;
+    public static int WallHealth;
 
     private void Start()
     {
-        health = maxHealth;
+        WallHealth = maxHealth;
         StartCoroutine(Regen());
     }
+
     void Update()
     {
-        if (health <= 0)
+        if (WallHealth <= 0)
         {
             Destroy(gameObject);
             SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.GetComponent<Slime>())
-            health -= 1;
-    }
+
     IEnumerator Regen()
     {
         while (true)
         {
-            if (health < maxHealth)
-                health++;
+            if (WallHealth < maxHealth)
+                WallHealth++;
             yield return new WaitForSeconds(15f - RegenerationButton.regenUp);
         }
     }
