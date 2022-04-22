@@ -70,7 +70,7 @@ public class HeraldOfDeath : MonoBehaviour
         once--;
         anim.SetBool("State_idle", false);
         anim.SetInteger("State_get_damage", 1);
-        yield return new WaitForSeconds(0.9f);
+        yield return new WaitForSeconds(0.1f);
         anim.SetInteger("State_get_damage", 2);
         once++;
     }
@@ -81,7 +81,7 @@ public class HeraldOfDeath : MonoBehaviour
         yield return new WaitForSeconds(2f);
         anim.SetBool("State_hit", true);
         CheckOfHealth();
-        yield return new WaitForSeconds(0.9f);
+        yield return new WaitForSeconds(0.7f);
         Wall.WallHealth -= 1;
         anim.SetBool("State_hit", false);
         CheckOfHealth();
