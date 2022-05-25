@@ -3,16 +3,23 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject obj;
-    private readonly float spawnrate = 2f;
+    public GameObject Slime;
+    public GameObject Boss;
+    private readonly float spawnrate = 5f;
     void Start()
     {
-        StartCoroutine(InsObj());
+        StartCoroutine(SpawnSlime());
+        StartCoroutine(SpawnBoss());
     }
-    IEnumerator InsObj()
+    IEnumerator SpawnSlime()
     {
-        Instantiate(obj, new Vector2(11f, Random.Range(-4.5f, 3.2f)), Quaternion.identity);
+        Instantiate(Slime, new Vector2(11f, Random.Range(-4.5f, 2.5f)), Quaternion.identity);
         yield return new WaitForSeconds(spawnrate);
-        StartCoroutine(InsObj());
+        StartCoroutine(SpawnSlime());
+    }
+    IEnumerator SpawnBoss()
+    {
+        yield return new WaitForSeconds(60f);
+        Instantiate(Boss, new Vector2(11f, Random.Range(-4.5f, 2.5f)), Quaternion.identity);
     }
 }

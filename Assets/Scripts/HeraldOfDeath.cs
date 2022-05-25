@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HeraldOfDeath : MonoBehaviour
 {
-    public float speed = -3f;
+    public float speed = -2f;
     private Animator anim;
     private int once = 1;
     private int twice = 0;
